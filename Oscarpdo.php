@@ -16,7 +16,7 @@ class Oscar {
 
     public function getOscarsById($oscarId): array {
         $query = "SELECT m_ID, title, m_desc, pic FROM movie WHERE m_ID = ?";
-        return $this->db->executeSelectQuery(query: $query, params: [$oscarId]);
+        return $this->db->executeSelectQuery($query, [$oscarId]);
     }
 
     public function getOscarsByType($Mt_name): array {
@@ -24,7 +24,7 @@ class Oscar {
                   FROM movie
                   INNER JOIN movie_type ON movie_type.mt_ID = movie.m_type
                   WHERE movie_type.Mt_name = ?";
-        return $this->db->executeSelectQuery(query: $query, params: [$Mt_name]);
+        return $this->db->executeSelectQuery($query, [$Mt_name]);
     }
 
     public function __destruct() {

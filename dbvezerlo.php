@@ -2,36 +2,37 @@
 
 class DBVezerlo {
 
-    private $conn = null;
+    private $conn;
     private $host = "localhost";
     private $user = "root";
     private $password = "";
     private $database = "oscar";
 
     function __construct() {
-        print("mysqli");
-        $this->conn = $this->connectDB(); 
+        $this->connectDB();
     }
 
     function connectDB() {
-        $conn = mysqli_connect($this->host, $this->user, $this->password, $this->database);
-        return $conn;
+        $this->conn = mysqli_connect($this->host, $this->user, $this->password, $this->database);
+
+        if (!$this->conn) {
+            die("Database connection failed: " . mysqli_connect_error());
+        }
     }
 
     function executeSelectQuery($query) {
         $resultset = []; 
         $result = mysqli_query($this->conn, $query);
-        while ($row = mysqli_fetch_assoc($result)) {
-            $resultset[] = $row;
+        if ($result) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $resultset[] = $row;
+            }
         }
-        if (!empty($resultset)) {
-            return $resultset; 
-        }
-        return [];
+        return $resultset;
     }
 
     function closeDB() {
-        if (!empty($this->conn)) {
+        if ($this->conn) {
             mysqli_close($this->conn);
             $this->conn = null;
         }

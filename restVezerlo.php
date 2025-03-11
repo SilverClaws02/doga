@@ -1,30 +1,29 @@
 <?php
-
 require_once("OscarrestKezelo.php");
 
-$view = "";
-if(isset($_GET["view"]))
-    $view = $_GET["view"];
+$view = $_GET["view"] ?? "";
 
-switch($view){
+$oscarrest = new OscarrestKezelo();
 
+switch ($view) {
     case "all":
-        $oscarrest = new OscarrestKezelo();
         $oscarrest->getAllOscars();
         break;
-
     case "single":
-        $oscarrest = new OscarrestKezelo();
-        $oscarrest->getOscarsByID(m_ID: $_GET["id"]);
+        if (!empty($_GET["id"])) {
+            $oscarrest->getOscarsById($_GET["id"]);
+        } else {
+            $oscarrest->getFault();
+        }
         break;
-
     case "tipus":
-        $oscarrest = new OscarrestKezelo();
-        $oscarrest->getOscarsByType(Mt_name: $_GET["tid"]);
+        if (!empty($_GET["tid"])) {
+            $oscarrest->getOscarsByType($_GET["tid"]);
+        } else {
+            $oscarrest->getFault();
+        }
         break;
-
     default:
-        $oscarrest = new OscarrestKezelo();
         $oscarrest->getFault();
 }
 ?>
