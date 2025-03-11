@@ -1,0 +1,39 @@
+{
+    "OscarsByType": [
+        {
+            "m_ID": 15,
+            "title": "Elemi",
+            "m_desc": "A Disney és a Pixar új filmje, az ELEMI egy olyan városban játszódik, ahol egymás mellett élnek a tűz-, víz-, föld- és levegőlakók.",
+            "pic": "pics\/Ele.jpg",
+            "Mt_description": "Az animáció olyan filmkészítési technika, amely élettelen tárgyak, rajzok vagy ábrák „kockázásával” olyan illúziót kelt a nézőben, mintha az egymástól kis mértékben eltérő képkockák sorozatából összeálló történésben, a szereplők megelevenednének vagy élnének."
+        },
+        {
+            "m_ID": 16,
+            "title": "Nimona",
+            "m_desc": "Egy középkori-futurisztikus királyság polgárait az Elit Lovagok Intézete védi, amelyet a legendás hősnő, Gloreth alapított, aki ezer évvel ezelőtt legyőzött egy \"nagy fekete szörnyet\", és magas fallal zárta körül a királyságot.",
+            "pic": "pics\/Nim.jpg",
+            "Mt_description": "Az animáció olyan filmkészítési technika, amely élettelen tárgyak, rajzok vagy ábrák „kockázásával” olyan illúziót kelt a nézőben, mintha az egymástól kis mértékben eltérő képkockák sorozatából összeálló történésben, a szereplők megelevenednének vagy élnének."
+        },
+        {
+            "m_ID": 17,
+            "title": "Pókember: A pókverzumon át",
+            "m_desc": "A Pókember – A Pókverzumon át remek egyveleg: stílusteremtő animációs film, családi dráma, akciófilm, komédia, szuperhősös kaland egyszerre.",
+            "pic": "pics\/PP.jpg",
+            "Mt_description": "Az animáció olyan filmkészítési technika, amely élettelen tárgyak, rajzok vagy ábrák „kockázásával” olyan illúziót kelt a nézőben, mintha az egymástól kis mértékben eltérő képkockák sorozatából összeálló történésben, a szereplők megelevenednének vagy élnének."
+        },
+        {
+            "m_ID": 18,
+            "title": "Roboálmok",
+            "m_desc": "Miután a robot a munka ünnepén, a tengerparton tett kirándulás során berozsdásodik és a homokba ragad, a kutyának a legjobb barátja nélkül kell folytatnia ...",
+            "pic": "pics\/Robo.jpg",
+            "Mt_description": "Az animáció olyan filmkészítési technika, amely élettelen tárgyak, rajzok vagy ábrák „kockázásával” olyan illúziót kelt a nézőben, mintha az egymástól kis mértékben eltérő képkockák sorozatából összeálló történésben, a szereplők megelevenednének vagy élnének."
+        },
+        {
+            "m_ID": 19,
+            "title": "A fiú és a szürke gém",
+            "m_desc": "Egy Mahito nevű fiatal fiú, aki az édesanyja után vágyakozik, egy olyan világba merészkedik, amelyen élők és holtak osztoznak. Ott a halál véget ér, és az élet ...",
+            "pic": "pics\/fszg.jpg",
+            "Mt_description": "Az animáció olyan filmkészítési technika, amely élettelen tárgyak, rajzok vagy ábrák „kockázásával” olyan illúziót kelt a nézőben, mintha az egymástól kis mértékben eltérő képkockák sorozatából összeálló történésben, a szereplők megelevenednének vagy élnének."
+        }
+    ]
+}

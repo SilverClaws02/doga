@@ -1,0 +1,10 @@
+{
+    "OscarsById": [
+        {
+            "m_ID": 1,
+            "title": "American Fiction",
+            "m_desc": "Nem mintha az American Fiction története önmagában nem lenne figyelemre méltó, mert nagyon is az. A már említett Monk szenved az egyetemen, ahol oktat, rendre komoly atrocitásokba kerül a hallgatókkal, az állóháború eredménye pedig az lesz, hogy kényszerszabadságolják. Mit lehet tenni, hősünk amúgy is egy irodalmi fesztiválra készült, amelybe az elbocsátása miatt így már teljes elánnal vetheti bele magát. Vagyis inkább vethetné, mert amint a bevezetőben említettük, Monk nem túl sikeres író, a kerekasztalos beszélgetésén is jelen van vagy hat olvasó.",
+            "pic": "pics\/AmF.jpg"
+        }
+    ]
+}

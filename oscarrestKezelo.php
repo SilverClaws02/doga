@@ -1,7 +1,7 @@
 <?php
 require_once("restKezelo.php");
 require_once("Oscarpdo.php");
-require_once("Oscar.php");
+//require_once("Oscar.php");
 
 class OscarrestKezelo extends RestKezelo {
 
