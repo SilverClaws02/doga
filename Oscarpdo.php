@@ -1,5 +1,5 @@
 <?php
-require_once("dbvezerlopdo.php");
+require("dbvezerlopdo.php");
 
 class Oscar {
 
