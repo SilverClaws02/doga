@@ -16,13 +16,13 @@ class OscarrestKezelo extends RestKezelo {
             $statusCode = 200;
         }
 
-        // HTTP headers set in UTF-8 format
+  
         $this->setHttpFejlec($statusCode);
         header('Content-Type: application/json; charset=UTF-8');
 
         $result["Oscars"] = $sorAdat;
 
-        // Send JSON response in UTF-8 format
+ 
         $response = $this->encodeJson($result);
         $file_path = "Oscars.json";
         $this->printfile($response, $file_path);
@@ -45,7 +45,7 @@ class OscarrestKezelo extends RestKezelo {
 
         $result["OscarsById"] = $sorAdat;
 
-        // Send JSON response
+ 
         $response = $this->encodeJson($result);
         $file_path = "OscarsById.json";
         $this->printfile($response, $file_path);
@@ -68,7 +68,7 @@ class OscarrestKezelo extends RestKezelo {
 
         $result["OscarsByType"] = $sorAdat;
 
-        // Send JSON response
+  
         $response = $this->encodeJson($result);
         $file_path = "OscarsByType.json";
         $this->printfile($response, $file_path);
@@ -83,7 +83,7 @@ class OscarrestKezelo extends RestKezelo {
         $sorAdat = array('error' => 'Bad Request!');
         $result["fault"] = $sorAdat;
 
-        // Send JSON response
+        
         $response = $this->encodeJson($result);
         $file_path = "Fault.json";
         $this->printfile($response, $file_path);
